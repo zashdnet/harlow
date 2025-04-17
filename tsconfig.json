@@ -18,10 +18,18 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // Add this to set the base directory for imports
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"], // Keep this for alias imports
+      "components/*": ["components/*"] // Add this for explicit components resolution
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/**/*" // Explicitly include the components directory
+  ],
   "exclude": ["node_modules"]
 }
