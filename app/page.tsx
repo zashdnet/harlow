@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Header from '../components/Header';
+import header from '../components/header';
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Header /> {/* Inserted Header component */}
+      <header /> {/* Inserted header component */}
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
